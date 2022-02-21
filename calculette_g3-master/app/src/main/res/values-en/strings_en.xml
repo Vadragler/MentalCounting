@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">groupe3</string>
+    <string name="bouton_calculer">Compute</string>
+    <string name="bouton_dernier_calcul">Last Compute</string>
+    <string name="toolbar_nettoyer">Clear</string>
+    <string name="toolbar_calculer">Compute</string>
+    <string name="ERREUR_TROP_GRAND">Value too high</string>
+    <string name="ERREUR_INCOMPLET">Incomplete compute</string>
+    <string name="ERREUR_DIVISION_ZERO">Divide by zero</string>
+
+
+
+</resources>

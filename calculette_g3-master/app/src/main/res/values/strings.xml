@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">groupe3</string>
+    <string name="bouton_calculer">Calculer</string>
+    <string name="bouton_dernier_calcul">Dernier Calcul</string>
+    <string name="button_plus" translatable="false">+</string>
+    <string name="button_substract" translatable="false">-</string>
+    <string name="button_multiply" translatable="false">*</string>
+    <string name="button_divide" translatable="false">/</string>
+    <string name="button_1" translatable="false">1</string>
+    <string name="button_2" translatable="false">2</string>
+    <string name="button_3" translatable="false">3</string>
+    <string name="button_4" translatable="false">4</string>
+    <string name="button_5" translatable="false">5</string>
+    <string name="button_6" translatable="false">6</string>
+    <string name="button_7" translatable="false">7</string>
+    <string name="button_8" translatable="false">8</string>
+    <string name="button_9" translatable="false">9</string>
+    <string name="button_0" translatable="false">0</string>
+    <string name="toolbar_nettoyer">Nettoyer</string>
+    <string name="toolbar_calculer">Calculer</string>
+    <string name="ERREUR_TROP_GRAND">Valeur trop grande</string>
+    <string name="ERREUR_INCOMPLET">Calcul Incomplet</string>
+    <string name="ERREUR_DIVISION_ZERO">Division par zero</string>
+</resources>
