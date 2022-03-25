@@ -1,9 +1,9 @@
-package com.jger.groupe3.database;
+package com.jger.MentalCounting.database;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 
-import com.jger.groupe3.entity.Calcul;
+import com.jger.MentalCounting.entity.Calcul;
 
 
 public class CalculDao extends BaseDao<Calcul> {

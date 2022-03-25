@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jger.groupe3">
+    package="com.jger.MentalCounting">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:screenOrientation="nosensor"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Groupe3">
+        android:theme="@style/Theme.MentalCounting">
         <activity
-            android:name=".view.CreditActivity"
+            android:name="com.jger.MentalCounting.view.CreditActivity"
             android:exported="false" />
         <activity
-            android:name=".view.StatistiqueActivity"
+            android:name="com.jger.MentalCounting.view.StatistiqueActivity"
             android:exported="false" />
         <activity
-            android:name=".view.LastComputeActivity"
+            android:name="com.jger.MentalCounting.view.CalculActivity"
             android:exported="false" />
         <activity
-            android:name=".view.CalculActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.MainActivity"
+            android:name="com.jger.MentalCounting.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

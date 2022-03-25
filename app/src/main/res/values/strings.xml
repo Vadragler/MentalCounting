@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">groupe3</string>
+    <string name="app_name">Calcul Mental</string>
     <string name="bouton_calculer">Calculer</string>
     <string name="bouton_statistique">Statistique</string>
     <string name="bouton_C" translatable="false">C</string>
@@ -18,12 +18,6 @@
     <string name="toolbar_nettoyer">Nettoyer</string>
     <string name="toolbar_calculer">Calculer</string>
     <string name="ERREUR_TROP_GRAND">Valeur trop grande</string>
-    <string name="ERREUR_INCOMPLET">Calcul Incomplet</string>
-    <string name="ERREUR_DIVISION_ZERO">Division par zero</string>
-    <string name="Symbol_plus" translatable="false">+</string>
-    <string name="Symbol_moins" translatable="false">-</string>
-    <string name="Symbol_multiplier">×</string>
-    <string name="Symbol_diviser">÷</string>
     <string name="Retour">Retour</string>
     <string name="bouton_credit">Crédits</string>
 </resources>

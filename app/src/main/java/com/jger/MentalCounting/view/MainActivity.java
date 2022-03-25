@@ -1,4 +1,4 @@
-package com.jger.groupe3.view;
+package com.jger.MentalCounting.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package com.jger.groupe3.view;
+package com.jger.MentalCounting.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,11 +11,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.jger.MentalCounting.database.CalculBaseHelper;
+import com.jger.MentalCounting.database.CalculDao;
+import com.jger.MentalCounting.entity.Calcul;
+import com.jger.MentalCounting.service.CalculService;
 import com.jger.groupe3.R;
-import com.jger.groupe3.database.CalculBaseHelper;
-import com.jger.groupe3.database.CalculDao;
-import com.jger.groupe3.entity.Calcul;
-import com.jger.groupe3.service.CalculService;
 
 import java.util.Locale;
 import java.util.Random;

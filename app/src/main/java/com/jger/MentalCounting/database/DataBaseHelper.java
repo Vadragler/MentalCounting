@@ -1,4 +1,4 @@
-package com.jger.groupe3.database;
+package com.jger.MentalCounting.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

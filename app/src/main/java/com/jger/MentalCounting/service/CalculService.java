@@ -1,7 +1,7 @@
-package com.jger.groupe3.service;
+package com.jger.MentalCounting.service;
 
-import com.jger.groupe3.database.CalculDao;
-import com.jger.groupe3.entity.Calcul;
+import com.jger.MentalCounting.database.CalculDao;
+import com.jger.MentalCounting.entity.Calcul;
 
 public class CalculService {
 
