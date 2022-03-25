@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Mental Counting</string>
+    <string name="app_name">Mental Couting</string>
     <string name="bouton_calculer">Compute</string>
     <string name="bouton_statistique">statistical</string>
     <string name="bouton_virgule">.</string>

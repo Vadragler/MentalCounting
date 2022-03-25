@@ -1,11 +1,11 @@
-package com.jger.MentalCounting.service;
+package com.example.mentalcounting.service;
 
-import com.jger.MentalCounting.database.CalculDao;
-import com.jger.MentalCounting.entity.Calcul;
+import com.example.mentalcounting.database.CalculDao;
+import com.example.mentalcounting.entity.Calcul;
 
 public class CalculService {
 
-    private CalculDao calculDao;
+    private final CalculDao calculDao;
 
     public CalculService(CalculDao calculDao) {
         this.calculDao = calculDao;

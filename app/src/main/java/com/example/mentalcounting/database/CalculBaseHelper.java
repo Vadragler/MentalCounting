@@ -1,4 +1,4 @@
-package com.jger.MentalCounting.database;
+package com.example.mentalcounting.database;
 
 import android.content.Context;
 

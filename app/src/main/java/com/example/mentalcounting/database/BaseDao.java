@@ -1,10 +1,10 @@
-package com.jger.MentalCounting.database;
+package com.example.mentalcounting.database;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.jger.MentalCounting.entity.BaseEntity;
+import com.example.mentalcounting.entity.BaseEntity;
 
 import java.util.ArrayList;
 import java.util.List;

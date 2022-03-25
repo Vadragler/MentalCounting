@@ -1,6 +1,4 @@
-package com.jger.MentalCounting.view;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.mentalcounting.view;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -11,11 +9,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jger.MentalCounting.database.CalculBaseHelper;
-import com.jger.MentalCounting.database.CalculDao;
-import com.jger.MentalCounting.entity.Calcul;
-import com.jger.MentalCounting.service.CalculService;
-import com.jger.groupe3.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.mentalcounting.R;
+import com.example.mentalcounting.database.CalculBaseHelper;
+import com.example.mentalcounting.database.CalculDao;
+import com.example.mentalcounting.entity.Calcul;
+import com.example.mentalcounting.service.CalculService;
 
 import java.util.Locale;
 import java.util.Random;
@@ -28,8 +28,8 @@ public class CalculActivity extends AppCompatActivity {
     private TextView textViewTrouve;
     private TextView textViewScore;
     private TextView textViewVies;
-    private Integer BORNE_HAUTE = 99999;
-    private Integer BORNE_HAUTE2 = 99;
+    private final Integer BORNE_HAUTE = 99999;
+    private final Integer BORNE_HAUTE2 = 99;
     private Integer NbDeVirgule = 0;
     private String Virgule;
     private CalculService calculService;
@@ -111,11 +111,7 @@ public class CalculActivity extends AppCompatActivity {
 
     private void negativeValeur() {
 
-        if (Negative == false) {
-            Negative = true;
-        } else {
-            Negative = false;
-        }
+        Negative = Negative == false;
         majTextView();
     }
 

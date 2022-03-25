@@ -1,6 +1,4 @@
-package com.jger.MentalCounting.view;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.mentalcounting.view;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -9,10 +7,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.jger.MentalCounting.database.CalculBaseHelper;
-import com.jger.MentalCounting.database.CalculDao;
-import com.jger.MentalCounting.service.CalculService;
-import com.jger.groupe3.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.mentalcounting.R;
+import com.example.mentalcounting.database.CalculBaseHelper;
+import com.example.mentalcounting.database.CalculDao;
+import com.example.mentalcounting.service.CalculService;
 
 import java.util.Locale;
 

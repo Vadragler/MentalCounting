@@ -1,12 +1,11 @@
-package com.jger.MentalCounting.view;
+package com.example.mentalcounting.view;
+
+import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-
-import com.jger.groupe3.R;
+import com.example.mentalcounting.R;
 
 import java.util.Locale;
 

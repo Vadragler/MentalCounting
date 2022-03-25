@@ -1,4 +1,4 @@
-package com.jger.MentalCounting.entity;
+package com.example.mentalcounting.entity;
 
 public class BaseEntity {
     public long id;

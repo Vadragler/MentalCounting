@@ -1,4 +1,4 @@
-package com.jger.MentalCounting.view;
+package com.example.mentalcounting.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.jger.groupe3.R;
+import com.example.mentalcounting.R;
 
 public class MainActivity extends AppCompatActivity {
 
