@@ -88,9 +88,9 @@ public class CalculActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.toolbar, menu);
-        MenuItem toolbarCalculer = menu.findItem(R.id.toolbarCalculer);
+        MenuItem toolbarRetour = menu.findItem(R.id.toolbarRetour);
         MenuItem toolbarVider = menu.findItem(R.id.toolbarVider);
-        toolbarCalculer.setOnMenuItemClickListener(menuItem -> calculResultat());
+        toolbarRetour.setOnMenuItemClickListener(menuItem -> finir());
         toolbarVider.setOnMenuItemClickListener(menuItem -> videTextView());
         return true;
     }
@@ -166,8 +166,8 @@ public class CalculActivity extends AppCompatActivity {
     }
 
     private void TextViewTrouve() {
-        int random1=0;
-        int random2=0;
+        int random1 = 0;
+        int random2 = 0;
         int symbolint = new Random().nextInt((4 - 1) + 1) + 1;
         double trouve = 0;
 
@@ -175,16 +175,16 @@ public class CalculActivity extends AppCompatActivity {
         switch (symbolint) {
             case 1:
                 symbol = "+";
-                    random1 = new Random().nextInt((99 - -99) + 1) + -99;
-                    random2 = new Random().nextInt((99 - 0) + 1) + 0;
-                    trouve = (double) random1 + random2;
+                random1 = new Random().nextInt((99 - -99) + 1) + -99;
+                random2 = new Random().nextInt((99 - 0) + 1) + 0;
+                trouve = (double) random1 + random2;
 
                 break;
             case 2:
                 symbol = "-";
-                    random1 = new Random().nextInt((99 - -99) + 1) + -99;
-                    random2 = new Random().nextInt((99 - 0) + 1) + 0;
-                    trouve = (double) random1 - random2;
+                random1 = new Random().nextInt((99 - -99) + 1) + -99;
+                random2 = new Random().nextInt((99 - 0) + 1) + 0;
+                trouve = (double) random1 - random2;
 
                 break;
             case 3:
@@ -197,7 +197,7 @@ public class CalculActivity extends AppCompatActivity {
                 symbol = "/";
                 random1 = new Random().nextInt((99 - -99) + 1) + -99;
                 random2 = new Random().nextInt((99 - -99) + 1) + -99;
-                if(random2==0) {
+                if (random2 == 0) {
                     random2 = new Random().nextInt((99 - 1) + 1) + 1;
                 }
                 trouve = (double) random1 / random2;
@@ -205,7 +205,7 @@ public class CalculActivity extends AppCompatActivity {
         }
         TrouveFinale = Math.round(trouve * 100.0) / 100.0;
         System.out.println(TrouveFinale);
-        textViewTrouve.setText(random1 +" "+ symbol +" "+ random2);
+        textViewTrouve.setText(random1 + " " + symbol + " " + random2);
 
     }
 
@@ -280,14 +280,20 @@ public class CalculActivity extends AppCompatActivity {
     private void life() {
         Vies--;
         if (Vies <= 0) {
-            Calcul calcul = new Calcul();
-            calcul.setScore(Score);
-            calculService.storeScoreInDatabase(calcul);
+
             finir();
         }
     }
 
-    private void finir() {
+    public void sauvegarde() {
+        Calcul calcul = new Calcul();
+        calcul.setScore(Score);
+        calculService.storeScoreInDatabase(calcul);
+    }
+
+    public boolean finir() {
+        sauvegarde();
         finish();
+        return true;
     }
 }

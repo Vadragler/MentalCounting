@@ -87,7 +87,7 @@ public abstract class BaseDao<T extends BaseEntity> {
     public long count() {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
-        Cursor cursor = db.rawQuery("select count(*) from " + getTableName(), null);
+        Cursor cursor = db.rawQuery("select count(Score) from " + getTableName() + " where Score>0", null);
         cursor.moveToFirst();
         int count = cursor.getInt(0);
         cursor.close();
@@ -99,12 +99,10 @@ public abstract class BaseDao<T extends BaseEntity> {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String count2 = "";
 
-        Cursor cursor = db.rawQuery("select Score from " + getTableName() + " order by Score Desc", null);
-        int max;
-        if (count() > 10) {
+        Cursor cursor = db.rawQuery("select Score from " + getTableName() + " order by Score Desc ", null);
+        int max = (int) count();
+        if (max > 10) {
             max = 10;
-        } else {
-            max = (int) count();
         }
         for (int i = 0; i < max; i++) {
             cursor.moveToNext();
